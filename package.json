@@ -13,7 +13,11 @@
     "dist"
   ],
   "scripts": {
-    "prepublishOnly": "webpack --mode=production"
+    "prepublishOnly": "webpack --mode=production",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
   },
   "devDependencies": {
     "@babel/core": "^7.10",
@@ -25,7 +29,8 @@
     "webpack-dev-server": "^3.11.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.0.0",
-    "css-loader": "^5.2.6"
+    "css-loader": "^5.2.6",
+    "jest": "^27.0.6"
   },
   "eslintConfig": {
     "extends": [
