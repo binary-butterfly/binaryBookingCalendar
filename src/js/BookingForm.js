@@ -307,7 +307,7 @@ const BookingForm = (props) => {
                 </>}
         </div>
         <button type="submit" className="button is-success calendar-submit-button"
-                disabled={!props.bookingBegin || !props.bookingEnd}>
+                disabled={!props.bookingBegin || !props.bookingEnd || editingBegin || editingEnd}>
             Jetzt {!!price && <>für <PriceDisplay amount={price}/> </>} buchen!
         </button>
     </form>;

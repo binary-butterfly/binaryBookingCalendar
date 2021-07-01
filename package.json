@@ -1,6 +1,6 @@
 {
   "name": "binary-booking-calendar",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "license": "MIT",
   "private": false,
   "main": "dist/binaryBookingCalendar.js",
