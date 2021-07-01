@@ -18,7 +18,6 @@ const BookingForm = (props) => {
     const [beginMinute, _setBeginMinute] = React.useState(null);
     const [endHour, _setEndHour] = React.useState(null);
     const [endMinute, _setEndMinute] = React.useState(null);
-    const [beginSame, _setBeginSame] = React.useState(false);
     const [endSame, _setEndSame] = React.useState(false);
     const [beginPreviousTimeStepperDisabled, setBeginPreviousTimeStepperDisabled] = React.useState(false);
     const [endPreviousTimeStepperDisabled, setEndPreviousTimeStepperDisabled] = React.useState(false);
@@ -27,6 +26,9 @@ const BookingForm = (props) => {
     const [price, setPrice] = React.useState(null);
     const [lastRequest, setLastRequest] = React.useState(0);
     const [currentRequestTimeout, setCurrentRequestTimeout] = React.useState();
+
+    const beginSame = props.beginSame;
+    const _setBeginSame = props.setBeginSame;
 
     const setBeginSame = (newBeginSame, begin = props.bookingBegin) => {
         _setBeginSame(newBeginSame);

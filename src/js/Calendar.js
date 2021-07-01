@@ -41,6 +41,7 @@ const Calendar = (props) => {
     const [unavailableDates, setUnavailableDates] = React.useState(new Map());
     const [lastSet, setLastSet] = React.useState('end');
     const [maxBookingMS, setMaxBookingMS] = React.useState(null);
+    const [beginSame, setBeginSame] = React.useState(false);
 
     const updateToday = () => {
         let newToday = getLast15MinStep(new Date());
@@ -170,7 +171,7 @@ const Calendar = (props) => {
     const handleSubmit = (evt) => {
         evt.preventDefault();
         updateToday();
-        props.handleSubmit(bookingBegin, bookingEnd);
+        props.handleSubmit(bookingBegin, bookingEnd, beginSame);
     };
 
     return <div className="calendar-container">
@@ -227,6 +228,8 @@ const Calendar = (props) => {
         </div>
         <div className="calendar-time-container">
             <BookingForm
+                beginSame={beginSame}
+                setBeginSame={setBeginSame}
                 getPrice={props.getPrice}
                 bookingBegin={bookingBegin}
                 setBookingBegin={setBookingBegin}
