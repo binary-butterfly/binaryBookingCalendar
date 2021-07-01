@@ -1,6 +1,6 @@
 {
   "name": "binary-booking-calendar",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "private": false,
   "main": "dist/binaryBookingCalendar.js",
@@ -26,7 +26,7 @@
     "sass-loader": "^12.1.0",
     "style-loader": "^3.0.0",
     "css-loader": "^5.2.6",
-    "sass": "^1.35.1"
+    "node-sass": "^6.0.1"
   },
   "eslintConfig": {
     "extends": [
