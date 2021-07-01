@@ -227,7 +227,6 @@ const Calendar = (props) => {
         </div>
         <div className="calendar-time-container">
             <BookingForm
-                apiBackend={props.apiBackend}
                 getPrice={props.getPrice}
                 bookingBegin={bookingBegin}
                 setBookingBegin={setBookingBegin}
@@ -243,7 +242,6 @@ const Calendar = (props) => {
 };
 
 Calendar.propTypes = {
-    apiBackend: PropTypes.string,
     bookings: PropTypes.arrayOf(PropTypes.shape(rawBookingPropTypes)).isRequired,
     maxBookingLength: PropTypes.number,
     initialView: PropTypes.oneOf(['day', 'month', '3months', 'asap']),

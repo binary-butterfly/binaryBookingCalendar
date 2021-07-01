@@ -319,7 +319,6 @@ BookingForm.propTypes = {
     setBookingBeginAndEnd: PropTypes.func.isRequired,
     handleSubmit: PropTypes.func.isRequired,
     submitRef: PropTypes.object.isRequired,
-    apiBackend: PropTypes.string,
 };
 
 export default BookingForm;
