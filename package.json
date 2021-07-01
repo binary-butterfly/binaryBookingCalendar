@@ -1,6 +1,6 @@
 {
   "name": "binary-booking-calendar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "private": false,
   "main": "dist/binaryBookingCalendar.js",
@@ -50,11 +50,13 @@
   "bugs": {
     "url": "https://github.com/binary-butterfly/binaryBookingCalendar/issues"
   },
+  "peerDependencies": {
+    "react": "^16.13",
+    "prop-types": "^15.7.2"
+  },
   "homepage": "https://github.com/binary-butterfly/binaryBookingCalendar#readme",
   "description": "A react component containing a calendar for bookings with date and time inputs",
   "dependencies": {
-    "react": "^17.0.2",
-    "prop-types": "^15.7.2",
     "accepts": "^1.3.7",
     "acorn": "^8.4.1",
     "ansi-colors": "^3.2.4",
