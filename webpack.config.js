@@ -6,7 +6,9 @@ module.exports = (env, argv) => {
     return {
         target: 'web',
         entry: './src/js/Calendar.js',
-        externals: ['react', 'prop-types'],
+        externals: {
+            react: 'react',
+        },
         output: {
             path: path.join(__dirname + '/dist'),
             filename: 'binaryBookingCalendar.js',
