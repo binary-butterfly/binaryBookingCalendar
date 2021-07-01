@@ -22,16 +22,19 @@ module.exports = (env, argv) => {
                 {
                     test: /\.(js)$/,
                     exclude: /node_modules/,
-                    use: ['babel-loader'],
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                    },
                 },
                 {
-                    test: /\.s[ac]ss$/i,
-                    exclude: /node-modules/,
+                    test: /\.scss$/,
                     use: [
                         'style-loader',
                         'css-loader',
                         'sass-loader',
                     ],
+                    sideEffects: true,
                 },
             ],
         },
