@@ -75,7 +75,7 @@ export const getUnavailableDates = (bookings) => {
     let unavailableDates = new Map();
     for (const booking of bookings) {
         if (booking.begin > booking.end) {
-            throw error('Invalid booking. End time cannot be before start time.');
+            throw Error('Invalid booking. End time cannot be before start time.');
         }
 
         let beginDateOfMonth = booking.begin.getDate();
