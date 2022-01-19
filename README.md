@@ -12,7 +12,7 @@ in which they want to book something.
 
 
 * ```bookings``` An array of already existing bookings formatted like
-  this: ```{begin: $utcTimeStrinc, end: $utcTimeString}```
+  this: ```{begin: $utcTimeString, end: $utcTimeString}```
 * ```maxBookingLength``` If bookings cannot be infinitely long, use this to set a max length in milliseconds
 * ```initialView``` Either ```month```, ```3monnths``` or ```asap```
     * Hint: You could make this dependent on your users' device size like
