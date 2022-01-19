@@ -12,7 +12,7 @@ in which they want to book something.
 
 
 * ```bookings``` An array of already existing bookings formatted like
-  this: ```{begin: $utcTimeStrinc, end: $utcTimeString}```
+  this: ```{begin: $utcTimeString, end: $utcTimeString}```
 * ```maxBookingLength``` If bookings cannot be infinitely long, use this to set a max length in milliseconds
 * ```initialView``` Either ```month```, ```3monnths``` or ```asap```
     * Hint: You could make this dependent on your users' device size like
@@ -21,6 +21,14 @@ in which they want to book something.
   function should take the date objects ```bookingBegin``` and ```bookingEnd``` as parameters.
 * ```handleSubmit``` A function that submits the booking to your backend. This should also accept the two date objects
   as well as an optional boolean indicating the booking starts now.
+
+## Development
+
+* Pull this repo
+* Install all dependencies with `npm install`
+* Start the development server and auto compilation using `npm run start`
+  * Your web browser should open, serving the demo application
+  * Note that the calendar was written to be included in an existing design, so styling of the demo app is very bare-bones.
 
 ## Current state
 
