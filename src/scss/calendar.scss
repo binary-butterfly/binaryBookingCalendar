@@ -282,6 +282,7 @@ input[type=number].calendar-numeric-input, select.calendar-numeric-input {
   margin-right: 1rem;
   margin-bottom: 1rem;
   min-width: 22%;
+  cursor: pointer;
 }
 
 .calendar-booking-container {
@@ -375,6 +376,10 @@ input[type=number].calendar-numeric-input, select.calendar-numeric-input {
 .calendar-stepper-button {
   height: 2.5rem;
   padding: 0.25rem;
+}
+
+.calendar-change-time-button:not(:disabled), .calendar-stepper-button:not(:disabled), .calendar-submit-button:not(:disabled) {
+  cursor: pointer;
 }
 
 .calendar-change-time-button {
