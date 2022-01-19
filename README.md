@@ -22,6 +22,14 @@ in which they want to book something.
 * ```handleSubmit``` A function that submits the booking to your backend. This should also accept the two date objects
   as well as an optional boolean indicating the booking starts now.
 
+## Development
+
+* Pull this repo
+* Install all dependencies with `npm install`
+* Start the development server and auto compilation using `npm run start`
+  * Your web browser should open, serving the demo application
+  * Note that the calendar was written to be included in an existing design, so styling of the demo app is very bare-bones.
+
 ## Current state
 
 While the calendar is in a usable state, it was written in limited time, therefore the code quality may not be the best
