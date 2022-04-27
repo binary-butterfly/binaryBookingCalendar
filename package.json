@@ -8,8 +8,10 @@
     "type": "git",
     "url": "git+https://github.com/binary-butterfly/binaryBookingCalendar.git"
   },
+  "jsnext:main": "src/js/Calendar.js",
   "files": [
-    "dist"
+    "dist",
+    "src/js"
   ],
   "scripts": {
     "prepublishOnly": "npm-run-all test build:prod",
